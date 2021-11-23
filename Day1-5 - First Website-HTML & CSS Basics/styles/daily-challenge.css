@@ -1,15 +1,24 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Oswald:wght@700&display=swap');
 
+body {
+    margin: 50px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    
+}
+
 h1 {
     font-family: 'Oswald', sans-serif;
-    text-align: center;
     color: rgb(83, 75, 75);
 }
 
 P {
     font-family: 'Fira Sans', sans-serif;
-    text-align: center;
     color: rgb(83, 75, 75);
 }
 #todays-challenge {

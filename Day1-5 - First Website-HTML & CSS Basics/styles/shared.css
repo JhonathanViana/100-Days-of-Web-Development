@@ -7,13 +7,6 @@ body {
     text-align: center;
 }
 
-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    
-}
-
 h1 {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
@@ -21,10 +14,10 @@ h1 {
 
 p {
     font-family: 'Fira Sans', sans-serif;
-    color: chocolate;
 }
 
 a {
+    font-family: 'Fira Sans', sans-serif;
     text-decoration: none;
     color: rgb(167, 1, 78);
 }

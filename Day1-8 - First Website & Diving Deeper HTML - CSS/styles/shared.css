@@ -3,17 +3,18 @@
 
 body {
     background-color: rgb(233, 215, 207);    
-    margin: 50px;
     text-align: center;
+    color: rgb(83, 75, 75);
+    margin: 50px;
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
+    font-family: 'Oswald', sans-serif; 
 }
 
 p {
     font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
 }
 
 a {
@@ -23,8 +24,4 @@ a {
 }
 a:hover {
     text-decoration: underline;
-}
-
-.link {
-    color: black;
 }

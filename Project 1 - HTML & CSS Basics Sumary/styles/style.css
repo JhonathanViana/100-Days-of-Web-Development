@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/*  */
+/*  */
+body {
+    background-color: #F4E5FF;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    
+    font-size: 52px;
+    font-weight: bold;
+    color: #55399D;
+}
+
+header {
+    text-align: center;
+}
+header img {
+    width: 300px;
+    /* height: 100px; */
+    /* não precisa colocar height, o próprio navegador faz a diminuição automaticamente */
+    
+}
+
+main {
+    width: 700px;
+    margin: 40px auto;
+    background-color: #713BD5;
+    /* text-align: justify; */
+    padding: 24px;
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+    color: rgb(248, 241, 255);
+    /* padding: 20px; */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 14px 0;
+    padding-left: 10px;
+    border-left: 5px solid transparent;
+}
+
+.yellow-quote {
+    color: rgb(255, 237, 177);
+    border-color: rgb(247, 209, 85);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(36, 3, 102);
+    background-color: #FFE9B0;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+a:hover, a:active {
+    background-color: rgb(250, 201, 39);
+}
+
+footer {
+    text-align: center;
+
+}
+footer p {
+    margin-top: 30px;
+    color: rgb(131, 113, 149);
+}
+.btn-footer {
+    background-color: rgb(250, 201, 39);
+    color: rgb(66, 51, 4);
+    padding: 10px 20px;
+    border-radius: 8px;
+    
+}
+
+.btn-footer:hover, .btn-footer:active {
+    background-color: rgb(255, 186, 58);
+}

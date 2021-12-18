@@ -8,45 +8,127 @@
     <title>HTML Forms</title>
 </head>
 <body>
-    <form action="/" method="GET">
-        <!-- GET = would be to get a new page with different data -->
-        <!-- POST = the server should store that data -->
-        <label for="username">Your Name</label>
-        <!-- when we using for="" attribute in label, they link to the form. So, if we click (in this case) on Your name, it'll select automatically the form to writing. -->
-        <input type="text" name="user-name" id="username">
+    
+    <header>
+        <h1>Demo Form</h1>
+    </header>
 
-        <label for="useremail">Your email adress</label>
-        <input type="email" name="user-email" id="useremail">
+    <main>
+        <form action="/" method="GET">
+            <section>
+                <h2>Your personal Details</h2>
+                <ul>
+                    <li>
+                        <!-- GET = would be to get a new page with different data -->
+                        <!-- POST = the server should store that data -->
+                        <label for="username">Your Name</label>
+                        <!-- when we using for="" attribute in label, they link to the form. So, if we click (in this case) on Your name, it'll select automatically the form to writing. -->
+                    </li>
+                
+                    <li>
+                        <!-- GET = would be to get a new page with different data -->
+                        <!-- POST = the server should store that data -->
+                        <label for="username">Your Name</label>
+                        <!-- when we using for="" attribute in label, they link to the form. So, if we click (in this case) on Your name, it'll select automatically the form to writing. -->
+                    </li>
 
-        <label for="userage">Your age</label>
-        <input type="number" name="user-age" id="userage">
-        <!-- id to connect with the label, for accessibility -->
+                    <li>
+                        <label for="useremail">Your email adress</label>
+                        <input type="email" name="user-email" id="useremail">
+                    </li>
 
-        <label for="userpassword">Your password</label>
-        <input type="password" name="user-password" id="userpassword">
+                    <li>
+                        <label for="userpassword">Your password</label>
+                        <input type="password" name="user-password" id="userpassword">
+                    </li>
 
-        <label for="birthdate">Your birthdate</label>
-        <input type="date" name="birthdate" id="user-birthdate">
-        <hr>
+                </ul>
+            </section>
 
-        <h2>How should we verify your account?</h2>
+            <section>
+                <h2>More details</h2>
+                <ul>
+                    <li>
+                        <label for="userage">Your age</label>
+                        <input type="number" name="user-age" id="userage">
+                        <!-- id to connect with the label, for accessibility -->
+                    </li>
+                    
+                    <li>
+                        <label for="birthdate">Your birthdate</label>
+                        <input type="date" name="birthdate" id="user-birthdate">
+                    </li>
+                    <li>
+                        <!-- dropdown -->
+                        <label for="favorite-color">Your favorite color?</label>
+                        <select name="favorite-color" id="favorite-color">
+                            <option value="Blue">Blue</option>
+                            <option value="Black">Black</option>
+                            <option value="Red">Red</option>
+                        </select>
+                    </li>
+                </ul>
+            </section>
 
-        <div class="radio-input">
-            <input type="radio" name="verify" id="verify-text-message" value="text-message">
-            <label for="verify-text-message">Via text message (SMS)</label>
-        </div>
-        <div class="radio-input"> 
-            <input type="radio" name="verify" id="verify-phone" value="phone">
-            <label for="verify-phone">Via phone call</label>
-        </div>
-        <div class="radio-input">
-            <input type="radio" name="verify" id="verify-email" value="email">
-            <label for="verify-email">Via an email</label>
-            <!-- need to have the same name in all radios to choose only 1 -->
-            <!-- need to target with VALUE, to send it the choise to the server -->
-        </div>
+            <section>
+                <input type="text" name="user-name" id="username">
+                <label for="usermessage">Your message</label>
+                <textarea name="user-message" id="usermessage"></textarea></li>
+            </section>
 
-        <button>Submit</button>
-    </form>
+            <section>
+                <h2>How should we verify your account?</h2>
+                <ul>
+                    <li class="radio-input">
+                        <input type="radio" name="verify" id="verify-text-message" value="text-message">
+                        <label for="verify-text-message">Via text message (SMS)</label>
+                    
+                    </li>
+
+                    <li class="radio-input">
+                        <input type="radio" name="verify" id="verify-phone" value="phone">
+                        <label for="verify-phone">Via phone call</label>
+                    </li>
+
+                    <li class="radio-input">
+                        <input type="radio" name="verify" id="verify-email" value="email">
+                        <label for="verify-email">Via an email</label>
+                        <!-- need to have the same name in all radios to choose only 1 -->
+                        <!-- need to target with VALUE, to send it the choise to the server -->
+                    </li>
+            </section>
+            <section>
+                <h2>How should we contact you?</h2>
+                <ul>
+                    <li class="radio-input">
+                        <input type="checkbox" name="contact-email" id="contact" value="email">
+                        <label for="contact-email">Contact me via email</label>
+                    </li>
+
+                    <li class="radio-input">
+                        <input type="checkbox" name="contact-phone" id="contact" value="phone">
+                        <label for="contact-phone">Contact me via phone</label>
+                    </li>
+                </ul> 
+            </section>
+
+            <hr>
+
+            <section>
+                <ul>
+                    <!-- checkbox -->
+                    <li class="radio-input">
+                        <input type="checkbox" name="terms" id="agree-terms">
+                        <label for="agree-terms">Agree to terms?</label>
+                    </li>
+                </ul>
+            </section>
+
+                <section>
+                    <button>Submit</button>
+                </section>
+        </form>
+    </main>
+    
 </body>
 </html>

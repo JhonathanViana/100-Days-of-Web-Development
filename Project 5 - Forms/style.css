@@ -5,6 +5,17 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+    text-align: center;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 form {
     width: 30rem;
     margin: 3rem auto;
@@ -13,13 +24,14 @@ form {
     border-radius: 6px;
 }
 
+
 label {
     margin-bottom: .5rem;
     display: block;
     /*  */
 }
 
-input {
+input,textarea,select {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
@@ -32,7 +44,7 @@ input {
 
 /* new thing */
 
-input:focus {
+input:focus, textarea:focus {
 /* style the input when focused */
     background-color: rgb(225, 181, 245);
     color: (32, 5, 63);

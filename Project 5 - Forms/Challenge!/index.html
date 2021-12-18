@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms Challenge</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <main>
+        <form action="/" method="get">
+            <section>
+                <h2>How we can help you?</h2>
+                <label for="username">Your Name</label>
+                <input type="text" name="user-name" id="username" required>      
+                
+                <label for="useremail">Your E-mail Adress</label>
+                <input type="email" name="user-email" id="useremail" required>
+
+                <label for="usernumber">Your Phone Number</label>
+                <input type="number" name="user-number" id="usernumber" required>
+
+                <label for="usermessage">Your Message</label>
+                <textarea name="user-message" id="usermessage" cols="30" rows="10"></textarea>
+
+                <!-- dropdown -->
+                <label for="how-find-us">How did you find us?</label>
+                <select name="how-find-us" id="how-find-us">
+                    <option value="Web Search">Web Search</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Youtube">YouTube</option>
+                    <option value="Google">Google</option>
+                </select>
+            </section>
+
+            <section>
+                <h2>How should we reply?</h2>
+                <ul>
+                    <li class="radio-input">
+                        <input type="radio" name="verify" id="verify-text-message" value="phone" required>
+                        <label for="verify-phone">Call me</label>
+
+                    </li>
+
+                    <li class="radio-input">
+                        <input type="radio" name="verify" id="verify-phone" value="email">
+                        <label for="verify-email">Send me an email</label>
+                    </li>
+
+                    <li class="radio-input">
+                        <input type="radio" name="verify" id="verify-email" value="noreply">
+                        <label for="no-reply">Don't reply</label>
+                        <!-- need to have the same name in all radios to choose only 1 -->
+                        <!-- need to target with VALUE, to send it the choise to the server -->
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <!-- checkbox -->
+                    <li class="radio-input">
+                        <input type="checkbox" name="terms" id="agree-terms" required>
+                        <label for="agree-terms">Accept Terms</label>
+                    </li>
+                </ul>
+            </section>
+            <section id="form-action-btn">
+                <button class="reset-btn" type="reset">Clear</button>
+                <button type="submit">Confirm</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

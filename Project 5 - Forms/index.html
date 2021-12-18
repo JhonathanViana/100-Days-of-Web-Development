@@ -15,21 +15,15 @@
 
     <main>
         <form action="/" method="GET">
+            <!-- GET = would be to get a new page with different data -->
+            <!-- POST = the server should store that data -->
             <section>
                 <h2>Your personal Details</h2>
                 <ul>
                     <li>
-                        <!-- GET = would be to get a new page with different data -->
-                        <!-- POST = the server should store that data -->
                         <label for="username">Your Name</label>
                         <!-- when we using for="" attribute in label, they link to the form. So, if we click (in this case) on Your name, it'll select automatically the form to writing. -->
-                    </li>
-                
-                    <li>
-                        <!-- GET = would be to get a new page with different data -->
-                        <!-- POST = the server should store that data -->
-                        <label for="username">Your Name</label>
-                        <!-- when we using for="" attribute in label, they link to the form. So, if we click (in this case) on Your name, it'll select automatically the form to writing. -->
+                        <input type="text" name="user-name" id="username">
                     </li>
 
                     <li>
@@ -41,7 +35,6 @@
                         <label for="userpassword">Your password</label>
                         <input type="password" name="user-password" id="userpassword">
                     </li>
-
                 </ul>
             </section>
 

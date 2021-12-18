@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <title>HTML Forms</title>
 </head>
+
 <body>
-    
+
     <header>
         <h1>Demo Form</h1>
     </header>
@@ -23,17 +25,17 @@
                     <li>
                         <label for="username">Your Name</label>
                         <!-- when we using for="" attribute in label, they link to the form. So, if we click (in this case) on Your name, it'll select automatically the form to writing. -->
-                        <input type="text" name="user-name" id="username">
+                        <input type="text" name="user-name" id="username" required>
                     </li>
 
                     <li>
                         <label for="useremail">Your email adress</label>
-                        <input type="email" name="user-email" id="useremail">
+                        <input type="email" name="user-email" id="useremail" required>
                     </li>
 
                     <li>
                         <label for="userpassword">Your password</label>
-                        <input type="password" name="user-password" id="userpassword">
+                        <input type="password" name="user-password" id="userpassword" required minlength="6">
                     </li>
                 </ul>
             </section>
@@ -43,13 +45,13 @@
                 <ul>
                     <li>
                         <label for="userage">Your age</label>
-                        <input type="number" name="user-age" id="userage">
+                        <input type="number" name="user-age" id="userage" required min="18" max="100">
                         <!-- id to connect with the label, for accessibility -->
                     </li>
-                    
+
                     <li>
                         <label for="birthdate">Your birthdate</label>
-                        <input type="date" name="birthdate" id="user-birthdate">
+                        <input type="date" name="birthdate" id="user-birthdate" required>
                     </li>
                     <li>
                         <!-- dropdown -->
@@ -75,7 +77,7 @@
                     <li class="radio-input">
                         <input type="radio" name="verify" id="verify-text-message" value="text-message">
                         <label for="verify-text-message">Via text message (SMS)</label>
-                    
+
                     </li>
 
                     <li class="radio-input">
@@ -102,7 +104,7 @@
                         <input type="checkbox" name="contact-phone" id="contact" value="phone">
                         <label for="contact-phone">Contact me via phone</label>
                     </li>
-                </ul> 
+                </ul>
             </section>
 
             <hr>
@@ -117,11 +119,13 @@
                 </ul>
             </section>
 
-                <section>
-                    <button>Submit</button>
-                </section>
+            <section>
+                <button type="submit">Submit</button>
+                <!-- <button type="reset">Clear</button> -->
+            </section>
         </form>
     </main>
-    
+
 </body>
+
 </html>

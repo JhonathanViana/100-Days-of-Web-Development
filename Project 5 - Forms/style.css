@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     background-color: rgb(29, 28, 28);
+    font-family: 'Roboto', sans-serif;
 }
 
 form {
@@ -10,13 +13,55 @@ form {
     border-radius: 6px;
 }
 
+label {
+    margin-bottom: .5rem;
+    display: block;
+    /*  */
+}
+
 input {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
     box-sizing: border-box;
+    font: inherit;
+    border: 1px solid rgb(187, 186, 186);
+    padding: .25rem;
+    color: rgb(36, 36, 36);
+}
+
+/* new thing */
+
+input:focus {
+/* style the input when focused */
+    background-color: rgb(225, 181, 245);
+    color: (32, 5, 63);
+    border-color: rgb(32, 5, 63);
 }
 
 button {
     display: block;
+    font: inherit;
+    /* inherit overwrite the browser default font style */
+    /* default font-size is 1rem or 16px */
+    background-color: rgb(32, 5, 63);
+    color: white;
+    border: 1px solid rgb(32, 5, 63);
+    padding: .5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(52, 15, 93);
+    border-color: rgb(52, 15, 93);
+}
+
+.radio-input {
+    display: flex;
+}
+
+.radio-input input {
+    width: auto;
+    margin-right: .5rem;
 }

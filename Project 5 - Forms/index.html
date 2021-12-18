@@ -25,7 +25,7 @@
                     <li>
                         <label for="username">Your Name</label>
                         <!-- when we using for="" attribute in label, they link to the form. So, if we click (in this case) on Your name, it'll select automatically the form to writing. -->
-                        <input type="text" name="user-name" id="username" required>
+                        <input type="text" name="user-name" id="username" required placeholder="First and last name">
                     </li>
 
                     <li>
@@ -51,7 +51,7 @@
 
                     <li>
                         <label for="birthdate">Your birthdate</label>
-                        <input type="date" name="birthdate" id="user-birthdate" required>
+                        <input type="date" name="birthdate" id="user-birthdate" required min="1921-01-01" max="2003-01-01"> 
                     </li>
                     <li>
                         <!-- dropdown -->
@@ -66,7 +66,6 @@
             </section>
 
             <section>
-                <input type="text" name="user-name" id="username">
                 <label for="usermessage">Your message</label>
                 <textarea name="user-message" id="usermessage"></textarea></li>
             </section>
@@ -75,7 +74,7 @@
                 <h2>How should we verify your account?</h2>
                 <ul>
                     <li class="radio-input">
-                        <input type="radio" name="verify" id="verify-text-message" value="text-message">
+                        <input type="radio" name="verify" id="verify-text-message" value="text-message" required>
                         <label for="verify-text-message">Via text message (SMS)</label>
 
                     </li>
@@ -113,7 +112,7 @@
                 <ul>
                     <!-- checkbox -->
                     <li class="radio-input">
-                        <input type="checkbox" name="terms" id="agree-terms">
+                        <input type="checkbox" name="terms" id="agree-terms" required>
                         <label for="agree-terms">Agree to terms?</label>
                     </li>
                 </ul>

@@ -10,3 +10,6 @@ let job = {
 // grouping related data
 
 alert(hobbies[0]);
+// will open an pop-up with the 0 on hobbies, in this case, Sports
+alert(job.salary);
+// will open an pop-up with the salary variable

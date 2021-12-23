@@ -1,7 +1,7 @@
 let age = 32;
-let greetingText = 'Hi, I\'m John!';
-alert(greetingText);
-alert(greetingText);
-greetingText = 'Hi, i am really John!';
-alert(greetingText);
-alert(age);
+let userName = 'Max';
+let hobbies = ['Sports', 'Cooking', 'Reading'];
+// index number beginning to 0, 1, 2...
+let job = { title: 'Developer', place: 'Brazil', salary: 50000}
+// grouping related data
+alert(hobbies[0]);

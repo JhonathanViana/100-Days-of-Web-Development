@@ -9,14 +9,17 @@ let job = {
 };
 
 let adultYears;
+
 function calculateAdultYears() {
-    adultYears = age - 18;
+    return age - 18;
     // in function we never use variable like let
+    // The return is used whenever the called function must return some value. If the function calculates a value and you need to use that value after the call, that value comes on return.
 }
 
-calculateAdultYears();
+adultYears = calculateAdultYears();
 alert(adultYears);
 
 age = 45;
-calculateAdultYears();
+adultYears = calculateAdultYears();
+
 alert(adultYears);

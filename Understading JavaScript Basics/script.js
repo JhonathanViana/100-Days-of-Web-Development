@@ -7,9 +7,10 @@ let job = {
     place: 'Brazil', 
     salary: 50000
 };
-// grouping related data
 
-alert(hobbies[0]);
-// will open an pop-up with the 0 on hobbies, in this case, Sports
-alert(job.salary);
-// will open an pop-up with the salary variable
+let adultYears = age - 18;
+alert(adultYears);
+
+age = 45;
+adultYears = age -18;
+alert(adultYears)

@@ -24,3 +24,13 @@ age = 45;
 adultYears = calculateAdultYears(age);
 
 alert(adultYears);
+
+let person = {
+    name: 'Max', //property
+    greet() { //method
+        alert('Hello!');
+    }
+    // function to an object, called method
+};
+
+person.greet();

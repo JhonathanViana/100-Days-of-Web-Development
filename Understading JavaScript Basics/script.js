@@ -8,27 +8,28 @@ let job = {
     salary: 50000
 };
 
-let adultYears;
+let totalAdultYears;
 
 function calculateAdultYears(userAge) {
     return userAge - 18;
-    // in function we never use variable like let
-    // The return is used whenever the called function must return some value. If the function calculates a value and you need to use that value after the call, that value comes on return.
-    // using , to separate functions parameter
+  
 }
+// in function we never use variable like let
+// The return is used whenever the called function must return some value. If the function calculates a value and you need to use that value after the call, that value comes on return.
+// using , to separate functions parameter
 
-adultYears = calculateAdultYears(age);
-alert(adultYears);
+totalAdultYears = calculateAdultYears(age);
+console.log(totalAdultYears);
 
 age = 45;
-adultYears = calculateAdultYears(age);
+totalAdultYears = calculateAdultYears(age);
 
-alert(adultYears);
+console.log(totalAdultYears);
 
 let person = {
     name: 'Max', //property
     greet() { //method
-        alert('Hello!');
+        console.log('Hello!');
     }
     // function to an object, called method
 };
